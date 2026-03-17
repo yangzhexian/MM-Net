@@ -38,9 +38,9 @@ The project provides optimization-based and deep learning-based methods for weig
 
 ## Requirements
 
-- Python 3.8+
+- Python 3.12
 - NumPy
-- PyTorch (>=1.9)
+- PyTorch 2.7.0
 - Matplotlib
 - Joblib
 
