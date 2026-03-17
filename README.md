@@ -53,6 +53,7 @@ pip install torch>=2.7.0 numpy matplotlib joblib
 ## Pre-trained Models
 
 The MM-Net requires pre-trained neural networks for step-size prediction.  
+
 For each scenario (`N_t`, `K`, `max_iter`, `SNR`), a model file named  
 `model_Diag_{N_t}Nt_{K}K_{max_iter}T_{SNR}dB.pth` should be placed inside the `Store_models/` directory.
 
@@ -77,6 +78,7 @@ python exp_diff_antenna.py
 ```
 
 This script performs 1000 Monte Carlo runs for each antenna configuration (from 4 to 128) and saves the results in `Store_results/diff_antennas.pkl`.  
+
 After execution, it plots WSR and CPU time versus the number of transmit antennas.
 
 > **Note:** This experiment may take several minutes to complete. You can reduce the number of Monte Carlo runs by modifying `num_monte_carlo` in the script.
@@ -88,6 +90,7 @@ python exp_diff_channels.py
 ```
 
 This script runs 1000 Monte Carlo simulations for a fixed antenna setup (e.g., 128 transmit antennas, 4 users) and saves the averaged convergence curves.  
+
 It produces two figures:
 - WSR vs. iteration
 - WSR vs. CPU time
