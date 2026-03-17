@@ -7,18 +7,9 @@ This repository contains the Python implementation of the algorithms presented i
 
 ![MM-Net Architecture](images/MM_Net_architecture.svg)
 
-The project provides optimization-based and deep learning-based methods for weighted sum-rate (WSR) maximization in multi-antenna interference channels. It includes:
+The project provides optimization-based and deep learning-based methods for weighted sum-rate (WSR) maximization in MIMO broadcast channels. It includes:
 - Classical WMMSE and MM algorithms
 - A deep unfolded network (MM-Net) that learns the step size parameters to speed up convergence
-
-## Features
-
-- **WSR Maximization** in MIMO interfering broadcast channels
-- **Matrix-inversion-free** MM algorithm
-- **Convergence rate analysis** with global sublinear guarantee
-- **Deep unfolding** architecture (MM-Net) that predicts step sizes using a small neural network
-- **Comparison scripts** for varying antenna numbers and channel realizations
-- **Reproducible** Monte Carlo simulations
 
 ## Repository Structure
 
