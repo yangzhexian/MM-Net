@@ -5,7 +5,7 @@ This repository contains the Python implementation of the algorithms presented i
 > **MM-Net: Recurrent Unfolding with Adaptive Majorization for Weighted Sum-Rate Beamforming**  
 > Zhexian Yang, Zepeng Zhang, Ziping Zhao
 
-![MM-Net Architecture](images/MM_Net_architecture.png)
+![MM-Net Architecture](images/MM_Net_architecture.svg)
 
 The project provides optimization-based and deep learning-based methods for weighted sum-rate (WSR) maximization in multi-antenna interference channels. It includes:
 - Classical WMMSE and MM algorithms
