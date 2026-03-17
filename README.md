@@ -47,7 +47,7 @@ The project provides optimization-based and deep learning-based methods for weig
 Install dependencies with:
 
 ```bash
-pip install numpy torch matplotlib joblib
+pip install torch>=2.7.0 numpy matplotlib joblib
 ```
 
 ## Pre-trained Models
