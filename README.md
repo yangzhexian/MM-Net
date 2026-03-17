@@ -33,6 +33,7 @@ The project provides optimization-based and deep learning-based methods for weig
 ├── Store_models/             # Folder containing pre-trained MM-Net models
 ├── Store_results/            # Output folder for Monte Carlo results
 └── figures/                  # Output folder for generated plots
+└── images/                   # Output folder for images in README.md
 ```
 
 ## Requirements
