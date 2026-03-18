@@ -15,15 +15,15 @@ A comparison between MM-Net and other unfolding-related articles is presented in
 
 **Table 1:** Comparisons of different learning-based methods. <a id="table1"></a>
 
-| Method                                                           | Network Type | Algorithm Prototype                                 | Channel Setting | Constraint  |
-| ---------------------------------------------------------------- | ------------ | --------------------------------------------------- | --------------- | ----------- |
-| MLP [<a href="#ref11">11</a>]                                    | MLP          | N/A                                                 | SISO            | flexible    |
-| CNN  [<a href="#ref12">12</a>,<a href="#ref19">19</a>]           | CNN          | N/A                                                 | MISO            | total power |
-| IAIDNN [<a href="#ref15">15</a>,<a href="#ref20">20</a>]         | unfolded NN  | WMMSE [<a href="#ref5">5</a>,<a href="#ref6">6</a>] | MIMO            | total power |
-| WMMSE-Net [<a href="#ref16">16</a>,<a href="#ref21">21</a>]      | unfolded NN  | WMMSE [<a href="#ref5">5</a>,<a href="#ref6">6</a>] | MISO            | flexible    |
-| WMMSE-Net [<a href="#ref17">17</a>]                              | unfolded NN  | WMMSE [<a href="#ref5">5</a>,<a href="#ref6">6</a>] | MIMO            | total power |
-| BLN-PGP [<a href="#ref18">18</a>]                                | unfolded NN  | PG                                                  | MISO            | flexible    |
-| MM-Net (this work) [<a href="#ref1">1</a>,<a href="#ref2">2</a>] | unfolded RNN | MM [<a href="#ref1">1</a>,<a href="#ref2">2</a>]    | MIMO            | flexible    |
+| Method                                                            | Network Type | Algorithm Prototype                                  | Channel Setting | Constraint  |
+| ----------------------------------------------------------------- | ------------ | ---------------------------------------------------- | --------------- | ----------- |
+| MLP [<a href="#ref11">11</a>]                                     | MLP          | N/A                                                  | SISO            | flexible    |
+| CNN  [<a href="#ref12">12</a>, <a href="#ref19">19</a>]           | CNN          | N/A                                                  | MISO            | total power |
+| IAIDNN [<a href="#ref15">15</a>, <a href="#ref20">20</a>]         | unfolded NN  | WMMSE [<a href="#ref5">5</a>, <a href="#ref6">6</a>] | MIMO            | total power |
+| WMMSE-Net [<a href="#ref16">16</a>, <a href="#ref21">21</a>]      | unfolded NN  | WMMSE [<a href="#ref5">5</a>, <a href="#ref6">6</a>] | MISO            | flexible    |
+| WMMSE-Net [<a href="#ref17">17</a>]                               | unfolded NN  | WMMSE [<a href="#ref5">5</a>, <a href="#ref6">6</a>] | MIMO            | total power |
+| BLN-PGP [<a href="#ref18">18</a>]                                 | unfolded NN  | PG                                                   | MISO            | flexible    |
+| MM-Net (this work) [<a href="#ref1">1</a>, <a href="#ref2">2</a>] | unfolded RNN | MM [<a href="#ref1">1</a>, <a href="#ref2">2</a>]    | MIMO            | flexible    |
 
 ## Repository Structure
 
