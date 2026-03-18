@@ -5,7 +5,9 @@ This repository contains the Python implementation of the algorithms presented i
 > **MM-Net: Recurrent Unfolding with Adaptive Majorization for Weighted Sum-Rate Beamforming**  
 > Zhexian Yang, Zepeng Zhang, Ziping Zhao
 
-![MM-Net Architecture](images/MM_Net_architecture.svg)
+<div align="center">
+    <img src="images/MM_Net_architecture.svg" alt="MM-Net Architecture" width="800" height="auto">
+</div>
 
 The project provides optimization-based and deep learning-based methods for weighted sum-rate (WSR) maximization in MIMO broadcast channels. It includes:
 - Classical WMMSE and MM algorithms
@@ -13,7 +15,8 @@ The project provides optimization-based and deep learning-based methods for weig
 
 A comparison between MM-Net and other unfolding-related articles is presented in the following table.
 
-**Table 1:** Comparisons of different learning-based methods. <a id="table1"></a>
+<div align="center">
+Table 1: Comparisons of different learning-based methods. <a id="table1"></a>
 
 | Method                                                            | Network Type | Algorithm Prototype                                  | Channel Setting | Constraint  |
 | ----------------------------------------------------------------- | ------------ | ---------------------------------------------------- | --------------- | ----------- |
@@ -24,6 +27,7 @@ A comparison between MM-Net and other unfolding-related articles is presented in
 | WMMSE-Net [<a href="#ref17">17</a>]                               | unfolded NN  | WMMSE [<a href="#ref5">5</a>, <a href="#ref6">6</a>] | MIMO            | total power |
 | BLN-PGP [<a href="#ref18">18</a>]                                 | unfolded NN  | PG                                                   | MISO            | flexible    |
 | MM-Net (this work) [<a href="#ref1">1</a>, <a href="#ref2">2</a>] | unfolded RNN | MM [<a href="#ref1">1</a>, <a href="#ref2">2</a>]    | MIMO            | flexible    |
+</div>
 
 ## Repository Structure
 
