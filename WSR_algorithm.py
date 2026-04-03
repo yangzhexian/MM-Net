@@ -36,11 +36,6 @@ def Compute_AB(H, V, sigma):
         _, _, N_s = V.shape
         H_tran = np.conj(np.transpose(H, axes=(0, 2, 1)))
 
-        # HV = np.einsum('imn,jnl->ijml', H, V)   # Einstein summation
-
-        # HV = np.tensordot(H, V, axes=([2], [1]))
-        # HV = np.transpose(HV, axes=(0, 2, 1, 3))
-
         HV = np.matmul(H[:, np.newaxis, :, :], V[np.newaxis, :, :, :])
         HV_diag = HV[np.arange(K), np.arange(K), :, :]
         HV2 = np.matmul(HV, np.conj(np.transpose(HV, axes=(0, 1, 3, 2))))
@@ -48,8 +43,6 @@ def Compute_AB(H, V, sigma):
         HV2_diag = HV2[np.arange(K), np.arange(K), :, :]
         B = H_tran @ np.linalg.solve(HV2_sum - HV2_diag, HV_diag)
         A = H_tran @ np.linalg.solve(HV2_sum, HV_diag @ np.conj(np.transpose(B, axes=(0, 2, 1))))
-        # # Symmetric form
-        # A = H.T.conj() @ (np.linalg.inv(HV2_sum - HV2_diag) - np.linalg.inv(HV2_sum)) @ H
     else:
         raise ValueError('The dimension of H is not 2 or 3.')
     return A, B
@@ -179,7 +172,7 @@ def MM_plus_MIMO(w, H, V_0, P_max, sigma, max_iter=100, tor=0):
 if __name__ == '__main__':
     # np.random.seed(1)
     K, N_r, N_t, N_s = 4, 4, 16, 4
-    SNR = 10
+    SNR = 0
     P_max = 1
     sigma = np.sqrt(P_max * 10 ** (-SNR / 10))
     w = np.ones(K)
