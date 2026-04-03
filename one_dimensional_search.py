@@ -1,4 +1,4 @@
-from math import *
+import numpy as np
 from copy import deepcopy
 import time
 
@@ -36,7 +36,6 @@ def bisection_method(f, a, b, tol=1e-6):
         fmid = f((l + r) / 2)
     
     return (l + r) / 2
-
 
 def newton_method(f, df, x0, tol=1e-6, max_iter=100):
     """
@@ -80,7 +79,7 @@ if __name__ == '__main__':
     a, b = 1, 2
     x0 = 2
     tol = 1e-8
-    exact_solution = sqrt(2)
+    exact_solution = np.sqrt(2)
     
     # Measure time and solve using Newton's method
     start_time_newton = time.time()
