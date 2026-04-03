@@ -120,7 +120,7 @@ You can adjust system parameters (number of users, antennas, SNR, etc.) directly
 
 ## Contact
 
-For questions or issues, please open an issue on GitHub or contact zhexianyang@shanghaitech.edu.cn
+For questions or issues, please open an issue on GitHub or contact zhexianyang@shanghaitech.edu.cn.
 
 ---
 
